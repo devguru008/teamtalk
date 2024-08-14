@@ -9764,6 +9764,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esm-serialize@npm:~0.3.1":
+  version: 0.3.1
+  resolution: "esm-serialize@npm:0.3.1"
+  checksum: c0f3e600fa30a99404f4bca22a0665dde658f955d534a73f949113947b2078b27298f6cdd86b64f57b55f99f943e00f31370c15259ebfccbb95944cf8693af55
+  languageName: node
+  linkType: hard
+
 "espree@npm:^9.6.0, espree@npm:^9.6.1":
   version: 9.6.1
   resolution: "espree@npm:9.6.1"
@@ -15346,6 +15353,7 @@ __metadata:
     eslint-plugin-prettier: "npm:~5.1.2"
     eslint-plugin-react: "npm:~7.33.2"
     eslint-plugin-react-hooks: "npm:~4.6.0"
+    esm-serialize: "npm:~0.3.1"
     ews-javascript-api: "npm:~0.13.2"
     fsevents: "npm:2.3.3"
     i18next: "npm:~23.7.16"

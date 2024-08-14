@@ -62,6 +62,7 @@
     "electron-dl": "3.5.2",
     "electron-store": "~8.1.0",
     "electron-updater": "^5.3.0",
+    "esm-serialize": "~0.3.1",
     "ews-javascript-api": "~0.13.2",
     "i18next": "~23.7.16",
     "jsonwebtoken": "~9.0.2",
