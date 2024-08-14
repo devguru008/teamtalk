@@ -1,52 +1,4 @@
-# Rocket.Chat Desktop App
-
-[![Travis CI Build Status](https://img.shields.io/travis/RocketChat/Rocket.Chat.Electron/master.svg?logo=travis)](https://travis-ci.org/RocketChat/Rocket.Chat.Electron)
-[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/RocketChat/rocket-chat-electron/master.svg?logo=appveyor)](https://ci.appveyor.com/project/RocketChat/rocket-chat-electron)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a87141c0a4442809d9a2bff455e3102)](https://www.codacy.com/app/tassoevan/Rocket.Chat.Electron?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RocketChat/Rocket.Chat.Electron&amp;utm_campaign=Badge_Grade)
-[![Project Dependencies](https://david-dm.org/RocketChat/Rocket.Chat.Electron.svg)](https://david-dm.org/RocketChat/Rocket.Chat.Electron)
-[![GitHub All Releases](https://img.shields.io/github/downloads/RocketChat/Rocket.Chat.Electron/total.svg)](https://github.com/RocketChat/Rocket.Chat.Electron/releases/latest)
-![GitHub](https://img.shields.io/github/license/RocketChat/Rocket.Chat.Electron.svg)
-
-Desktop application for [Rocket.Chat][] available for macOS, Windows and Linux
-using [Electron][].
-
-![Rocket.Chat Desktop App](https://user-images.githubusercontent.com/2263066/91490997-c0bd0c80-e889-11ea-92c7-2cbcc3aabc98.png)
-
----
-
-## Engage with us
-
-### Share your story
-We’d love to hear about [your experience][] and potentially feature it on our
-[Blog][].
-
-### Subscribe for Updates
-Once a month our marketing team releases an email update with news about product
-releases, company related topics, events and use cases. [Sign Up!][]
-
----
-
-## Download
-
-You can download the latest version from the [Releases][] page.
-
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/rocketchat-desktop)
-
-## Install
-
-Launch the installer and follow the instructions to install.
-
-### Windows Options
-
-On Windows you can run a silent install by adding the `/S` flag. You can also
-add the options below:
-
-- `/S` - Silent install
-- `/allusers` - Install for all users (requires admin)
-- `/currentuser` - Install only the for current user (default)
-- `/disableAutoUpdates` - Disable automatic updates
-
-## Development
+# TeamTalk Desktop App
 
 ### Quick start
 
@@ -60,8 +12,8 @@ Prerequisites:
 Now just clone and start the app:
 
 ```sh
-git clone https://github.com/RocketChat/Rocket.Chat.Electron.git
-cd Rocket.Chat.Electron
+git clone https://github.com/devguru008/teamtalk.git
+cd teamtalk
 yarn
 yarn start
 ```
@@ -167,8 +119,8 @@ The file syntax is as follows:
 
 ```json
 {
-  "Demo Rocket Chat": "https://demo.rocket.chat",
-  "Open Rocket Chat": "https://open.rocket.chat"
+  "Demo Team Talk 1": "https://demo1.team.talk",
+  "Open Team Talk 2": "https://demo2.team.talk"
 }
 ```
 
