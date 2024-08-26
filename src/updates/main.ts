@@ -203,21 +203,6 @@ export const setupUpdates = async (): Promise<void> => {
     dispatch({ type: UPDATES_CHECKING_FOR_UPDATE });
   });
 
-  autoUpdater.addListener('update-available', ({ version }) => {
-    const skippedUpdateVersion = select(
-      ({ skippedUpdateVersion }) => skippedUpdateVersion
-    );
-    if (skippedUpdateVersion === version) {
-      dispatch({ type: UPDATES_NEW_VERSION_NOT_AVAILABLE });
-      return;
-    }
-
-    dispatch({
-      type: UPDATES_NEW_VERSION_AVAILABLE,
-      payload: version as string,
-    });
-  });
-
   autoUpdater.addListener('update-not-available', () => {
     dispatch({ type: UPDATES_NEW_VERSION_NOT_AVAILABLE });
   });
